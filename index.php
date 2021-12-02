@@ -42,12 +42,12 @@
 
                 </div>
             </div>
-            <div class="row container-fluid m-2">
-                <p class="timer col text-center">60</p>
-            </div>
 
             <div class="row container-fluid m-2 typingGame">
-                <div class="flex-row d-flex justify-content-center">
+                <div class="row container-fluid m-2">
+                    <p class="timer col text-center">60</p>
+                </div>
+                <div class="statsGrid flex-row d-flex justify-content-center">
                     <div class="typoStat col-md">
                         <p class="p-2 wpm">WPM</p>
                         <p class="statValue">100</p>

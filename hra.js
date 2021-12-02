@@ -18,20 +18,18 @@ const hlaskyPolitikov = [
 ];
 
 let aktualnaHlaska = dajHlasku();
-rewriteText.innerText = aktualnaHlaska[0];
-autor.innerText = aktualnaHlaska[1];
 let aktualnyText = "";
 
 let uplynulyCas = 0;
 let zostavajuciCas = 60;
 
+function inizializuj() {
+    rewriteText.innerText = aktualnaHlaska[0];
+    autor.innerText = aktualnaHlaska[1];
 
-textArea.addEventListener('click', spustiHru());
-textArea.addEventListener('input', function(e) {
-    aktualnyText = textArea.innerText;
-    charsAktualnyText = aktualnyText.split('');
-
-});
+    textArea.addEventListener('click', spustiHru);
+    textArea.addEventListener('input', spracujAktualnyText);
+}
 
 function dajHlasku() {
     let dlzka = hlaskyPolitikov.length;
@@ -39,9 +37,33 @@ function dajHlasku() {
     return hlaskyPolitikov[rndIndex];
 }
 
+function spracujAktualnyText() {
+    aktualnyText = textArea.value;
+    if (aktualnyText.length < aktualnaHlaska[0].length) {
+        aktualnyTextZnaky = aktualnyText.split('');
+        spansAll = document.querySelectorAll('.span_char');
+        spansAll.forEach((aktualnySpan, index) => {
+            aktualnyZnak = aktualnyTextZnaky[index];
+
+            if (aktualnyZnak == null) {
+                aktualnySpan.classList.remove('matchOK');
+                aktualnySpan.classList.remove('matchNOK');
+            } else if (aktualnyZnak === aktualnySpan.innerText) {
+                aktualnySpan.classList.add('matchOK');
+                aktualnySpan.classList.remove('matchNOK');
+            } else {
+                aktualnySpan.classList.add('matchNOK');
+                aktualnySpan.classList.remove('matchOK');
+            }
+        });
+    }
+}
+
 function spustiHru() {
+
     oznacZnaky();
 
+    clearInterval(casovac);
     casovac = setInterval(updateTime, 1000);
 }
 
@@ -49,6 +71,7 @@ function oznacZnaky() {
     rewriteText.innerText = "";
     aktualnaHlaska[0].split('').forEach(znak => {
         let span = document.createElement('span');
+        span.classList.add('span_char');
         span.innerText = znak;
         rewriteText.appendChild(span);
     });
@@ -71,3 +94,5 @@ function resetTime() {
 function ukonciHru() {
 
 }
+
+inizializuj();

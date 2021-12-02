@@ -111,3 +111,38 @@ span.underline {
     text-decoration: none;
     font-weight: bold;
 }
+
+.matchOK {
+    color: #4D9458;
+}
+
+.matchNOK {
+    color: #A8394E;
+}
+
+.statsGrid {
+    padding: 10px;
+    margin: 20px 0px 20px 0px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: darkgrey;
+}
+
+.typoStat {
+    background-color: #487BAB;
+}
+
+.typoStat:first-of-type {
+    border-radius: 20px 0px 0px 20px;
+    background-color: #487BAB;
+}
+
+.typoStat:last-of-type {
+    border-radius: 0px 20px 20px 0px;
+    background-color: #487BAB;
+}
+
+.typoStat>p {
+    text-align: center;
+    margin: none;
+}
