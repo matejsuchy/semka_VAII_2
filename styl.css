@@ -1,0 +1,113 @@
+/* 
+COLOUR PALETTE
+
+Middle Green
+#4D9458
+Cerulean Frost
+#6591BA
+Steel Blue
+#487BAB
+Amaranth Purple
+#A8394E
+Deep Taupe
+#7A686B
+*/
+
+.farby {
+    background-color: #4D9458;
+    background-color: #6591BA;
+    background-color: #487BAB;
+    background-color: #A8394E;
+    background-color: #7A686B;
+}
+
+.game-choose {
+    text-align: center;
+    border: 1px solid #487BAB;
+    border-radius: 1em;
+    background-color: #6591BA;
+    margin: 5px 20px;
+    padding: 3%;
+    color: white;
+}
+
+.top {
+    border: 1px solid #487BAB;
+    margin: 5px 5px 0 5px;
+    border-radius: 5px;
+    padding: 30px 10px;
+    text-align: center;
+    background-color: #6591BA;
+    color: white;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: end;
+    margin: 5px 0px 10px 0px;
+}
+
+.dropdown>button {
+    background-color: #A8394E;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(122, 104, 107, 0.1);
+}
+
+.blockquote {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
+.blog-post {
+    margin: 20px 40px;
+    text-align: justify;
+}
+
+.main-content {
+    background-color: rgba(122, 104, 107, 0.2);
+}
+
+.btn-socials {
+    border-radius: 50%;
+    background-color: black;
+    border: none;
+}
+
+.footer-socials {
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    padding: 10px 0;
+}
+
+h1 {
+    padding-top: 20px;
+}
+
+span.strong {
+    font-weight: bold;
+}
+
+span.underline {
+    text-decoration: underline;
+}
+
+.btn-login {
+    background-color: #4D9458;
+    border: 1px solid #4D9458;
+    animation: ease-in-out;
+}
+
+.btn-login:hover,
+.btn-login::selection {
+    background-color: rgb(77, 148, 88);
+    border: 1px solid black;
+}
+
+.btn-login>a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
