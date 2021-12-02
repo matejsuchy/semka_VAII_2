@@ -23,7 +23,6 @@ Deep Taupe
 
 .game-choose {
     text-align: center;
-    border: 1px solid #487BAB;
     border-radius: 1em;
     background-color: #6591BA;
     margin: 5px 20px;
@@ -69,6 +68,7 @@ body {
 
 .main-content {
     background-color: rgba(122, 104, 107, 0.2);
+    padding-bottom: 15rem;
 }
 
 .btn-socials {
@@ -123,26 +123,36 @@ span.underline {
 .statsGrid {
     padding: 10px;
     margin: 20px 0px 20px 0px;
-    border: 1px solid black;
     border-radius: 20px;
-    background-color: darkgrey;
+    background-color: #487BAB;
 }
 
 .typoStat {
-    background-color: #487BAB;
+    background-color: #6591BA;
 }
 
 .typoStat:first-of-type {
     border-radius: 20px 0px 0px 20px;
-    background-color: #487BAB;
 }
 
 .typoStat:last-of-type {
     border-radius: 0px 20px 20px 0px;
-    background-color: #487BAB;
 }
 
 .typoStat>p {
     text-align: center;
     margin: none;
+}
+
+.timer {
+    font-size: 2.8rem;
+}
+
+.typingGame {
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+.textArea {
+    height: 5rem;
 }

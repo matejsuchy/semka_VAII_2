@@ -45,27 +45,27 @@
 
             <div class="row container-fluid m-2 typingGame">
                 <div class="row container-fluid m-2">
-                    <p class="timer col text-center">60</p>
+                    <p class="timer col text-center">Zostáva: 60 s</p>
                 </div>
                 <div class="statsGrid flex-row d-flex justify-content-center">
                     <div class="typoStat col-md">
-                        <p class="p-2 wpm">WPM</p>
+                        <p class="p-1 wpm">WPM</p>
                         <p class="statValue">100</p>
                     </div>
                     <div class="typoStat col-md">
-                        <p class="p-2 cpm">CPM</p>
+                        <p class="p-1 cpm">CPM</p>
                         <p class="statValue">100</p>
                     </div>
                     <div class="typoStat col-md">
-                        <p class="p-2 presnost">Presnost</p>
+                        <p class="p-1 presnost">Presnosť</p>
                         <p class="statValue">100%</p>
                     </div>
                     <div class="typoStat col-md">
-                        <p class="p-2 prepisaneSlova">Prepisane slová</p>
+                        <p class="p-1 prepisaneSlova">Prepisane slová</p>
                         <p class="statValue">0</p>
                     </div>
                     <div class="typoStat col-md">
-                        <p class="p-2 chyby">Chyby</p>
+                        <p class="p-1 chyby">Chyby</p>
                         <p class="statValue">0</p>
                     </div>
                 </div>
@@ -73,10 +73,8 @@
                     <p class="rewriteText " name="rewriteText"></p>
                     <footer class="blockquote-footer autor"></footer>
                 </blockquote>
-                <input class="textArea" name="textArea" type="textarea">
+                <textarea class="textArea" name="textArea" type="textarea"></textarea>
             </div>
-
-
         </div>
     </main>
     <script src="hra.js"></script>

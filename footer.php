@@ -18,7 +18,7 @@
                 </svg></a>
         </div>
     </div>
-    <div class="text-center p-2">
+    <div class="text-center">
         © 2021 Copyright:
         <a class="text-white" href="www.fri.uniza.sk">Fakulta riadenia a informatiky</a>
         <a class="text-white" href="www.uniza.sk">UNIZA</a>

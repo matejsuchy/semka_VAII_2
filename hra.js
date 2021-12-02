@@ -81,7 +81,7 @@ function updateTime() {
     if (zostavajuciCas > 0) {
         zostavajuciCas--;
         uplynulyCas++;
-        casovacElement.innerText = zostavajuciCas;
+        casovacElement.innerText = `Zostáva: ${zostavajuciCas} s`;
     } else {
         ukonciHru();
     }
